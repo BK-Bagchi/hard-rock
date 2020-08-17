@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+body{
+    background-color: #13141b;
+    color: #ffffff;
+    background-image: url(images/bg-image.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+}
+
+.form-control{
+    background-color:rgba(255, 255, 255, 0.2);
+    padding: 22px;
+    border: none;
+    border-radius: 25px;
+}
+.btn{
+    padding: 9px 20px;
+}
+.lyrics-btn:hover{
+    background: transparent;
+    border: 1.5px solid cyan;
+    padding-bottom: 5px !important;
+}
+
+.btn-privious{
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+.navbar-toggler {
+    border: none;
+}
+.search-box{
+    position: relative;
+}
+.search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border-radius: 1.5rem;
+}
+.single-result{
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    border: 0.2px solid rgba(255, 255, 255, 0.15);
+}
+
+
+
+
+
+.album-cover{
+    border-radius: 7px;
+}
+.artist-picture{
+    width: 50px;
+    border-radius: 50%;
+    animation: rotation 10s infinite linear;
+}
+@keyframes rotation{
+    form{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(360deg)
+    }
+}
+.more-of-artist{
+    min-width: 150px;
+    padding: 9px 20px;
+    margin: 8px 0 !important;
+    border: 1.5px solid cyan;
+    background: transparent;
+}
+.background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.lyrics-holder{
+    background: rgba(0,0,0,0.7);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    border-radius: 10px;
+    height: 90vh;
+    width: 90%;
+    opacity: 1;
+    overflow: auto;
+}
+.lyrics-holder .quit{
+    color: white;
+    position: absolute;
+    top: calc(5% + 5px);
+    right: calc(5% + 5px);
+    font-size: 30px;
+    cursor: pointer;
+}
+.lyrics-holder pre{
+    width: 70%;
+    font-size: 25px;
+    color: white;
+}
+.listen-music{
+    border-radius: 5px;
+    border: 1.5px solid cyan;
+    background: transparent;
+    margin-left: 5px;
+}
+.load-delete-data button{
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+.load-delete-data button:hover{
+    text-decoration: underline;
+}
